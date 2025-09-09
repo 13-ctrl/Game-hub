@@ -8,18 +8,23 @@ function App() {
         base: `"nav" "main"`,
         lg: `"nav nav" "aside main"`, //1024
       }}
+
+    
     >
       <GridItem area="nav">
         <NavBar />
       </GridItem>
+
       <Show above="lg">
         <GridItem area="aside" bg="gold">
           Aside
         </GridItem>
       </Show>
+
       <GridItem area="main" bg="dodgerblue">
         Main
       </GridItem>
+
     </Grid>
   );
 }
